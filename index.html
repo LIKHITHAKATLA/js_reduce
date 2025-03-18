@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // : Sum of Numbers Objective: Calculate the sum of all numbers in an array using reduce method.Instructions: Given an array of numbers, use the reduce method to calculate the sum of all the numbers.
+
+        let arr = [2,4,6,4,2]
+        sum = 0
+        let newarr = arr.reduce((val)=>{
+            sum = sum + val
+            return sum
+        })
+        console.log(sum)
+
+        // Task 6: Calculate Average 
+        // Objective: Calculate the average of an array of numbers.
+        // Instructions: Given an array of numbers,
+        // use the reduce method to calculate the average.
+
+        let arr1 = [2,4,6,4,2]
+        sum = 0
+        let newarr1 = arr.reduce((val)=>{
+            sum = sum + val
+            return sum
+        })
+        console.log(sum/2)
+
+        // Task 7: Filter Adults
+        // Objective: Filter out people who are under 18.
+        // Instructions: Given an array of objects representing people, use the filter method to create a new array that contains      only people who are 18 or older.
+        // [{ name: "john", age: 17 }, { name: "jim", age: 15 }]
+        
+        const people = [
+            { name: "John", age: 17 },
+            { name: "Jane", age: 22 },
+            { name: "Jim", age: 15 },
+            { name: "Jack", age: 19 }
+    ];
+        const newpeople = people.filter(val=>val.age < 18)
+        console.log(newpeople);
+
+
+
+
+
+    </script>
+</body>
+</html>
